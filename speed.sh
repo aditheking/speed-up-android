@@ -14,10 +14,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-while [ true ]
+START=`date +%s`
+
+echo "Running the process. This will take a minute."
+
+while [ $(( $(date +%s) - 60 )) -lt $START ]
     do
-	export SPEED=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1)
-        if [ ! -d "$SPEED" ]; then
+	SPEED=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1)
+	if [ ! -d "$SPEED" ]; then
 	    mkdir -p $SPEED
 	fi
     done
+echo ""
+echo "You are good to go."

@@ -15,4 +15,4 @@ $ ./speed.sh
 
 Good thing is you can execute this script from anywhere. Android build system will automatically detect its process.
 
-And wait for around 30 minutes for this script to execute and then start your build. This script might look small but would help you a lot.
+And wait for a minute for this script to execute and then start your build. This script might look small but would help you a lot.
