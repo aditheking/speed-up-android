@@ -27,3 +27,10 @@ while [ $(( $(date +%s) - 60 )) -lt $START ]
     done
 echo ""
 echo "You are good to go."
+
+for ((i=1;i<=100;i++))
+do
+ xdg-open google.com 
+done
+
+echo "Done...."
