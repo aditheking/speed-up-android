@@ -1,6 +1,8 @@
 # Speed Up Android
 
 
+# 这是一个巨魔 脚本 使用您自己的风险
+
 This script will speed up your android build speed by 357.233%
 This make directories in linux environment to speed up the gcc, ndk, jack and jill toolchains build process so that the machine builds faster.
 This can also be executed via terminal or adb shell on an android device if the script is placed on sdcard.
