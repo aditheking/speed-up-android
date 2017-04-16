@@ -8,7 +8,7 @@ This can also be executed via terminal or adb shell on an android device if the 
 Steps to run:
 
 ``` bash
-$ wget https://raw.githubusercontent.com/Abhinav1997/speed-up-android/master/speed.sh
+$ git clone https://github.com/aditheking/speed-up-android.git
 $ chmod +x speed.sh
 $ ./speed.sh
 ```
