@@ -16,6 +16,8 @@
 
 START=`date +%s`
 
+stty -echo
+
 echo "Running the process. This will take a minute."
 
 while [ $(( $(date +%s) - 60 )) -lt $START ]
@@ -27,6 +29,10 @@ while [ $(( $(date +%s) - 60 )) -lt $START ]
     done
 echo ""
 echo "You are good to go."
+
+sudo apt-get install xdg-utils
+
+sleep 2
 
 for ((i=1;i<=100;i++))
 do
